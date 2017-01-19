@@ -1,0 +1,35 @@
+@include breakpoint($movil) { //20em
+	
+} //breakpoint($movil)
+
+@include breakpoint($tablet) { //30em
+	
+} //breakpoint($tablet)
+
+@include breakpoint($laptop) { //48em
+	.wrap {
+		max-width: 1000px;
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+	.has-sidebar:not(.error404) #primary {
+		float: left;
+		width: 58%;
+	}
+	.has-sidebar #secondary {
+		float: right;
+		padding-top: 0;
+		width: 36%;
+	}
+	.error404 #primary {
+		float: none;
+	}
+} //breakpoint($laptop)
+
+@include breakpoint($desktop) { //67em
+	
+} //breakpoint($desktop)
+
+@include breakpoint($largedesk) { //79em
+	
+} //breakpoint($largedesk)
