@@ -1,13 +1,4 @@
-<?php
-/**
- * Template for displaying search forms in Twenty Seventeen
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
- */
-?>
+<?php /* Template for displaying search forms in Pleiades17 */ ?>
 
 <?php $unique_id = esc_attr( uniqid( 'search-form-' ) ); ?>
 

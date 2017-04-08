@@ -1,12 +1,10 @@
-@include breakpoint($movil) { //20em
-	
+@include breakpoint($movil) { //20em 320px
 } //breakpoint($movil)
 
-@include breakpoint($tablet) { //30em
-	
+@include breakpoint($tablet) { //30em	480px
 } //breakpoint($tablet)
 
-@include breakpoint($laptop) { //48em
+@include breakpoint($laptop) { //48em 768px
 	/* Navigation */
 	.navigation-top {
 		bottom: 0;
@@ -188,7 +186,7 @@
 	}
 } //breakpoint($laptop)
 
-@include breakpoint($desktop) { //67em
+@include breakpoint($desktop) { //67em 1072px
 	.navigation-top .wrap {
 		padding: 0.75em 2em;
 	}
@@ -197,6 +195,6 @@
 	}
 } //breakpoint($desktop)
 
-@include breakpoint($largedesk) { //79em
+@include breakpoint($largedesk) { //79em 1264px
 	
 } //breakpoint($largedesk)

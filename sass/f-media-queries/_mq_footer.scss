@@ -1,8 +1,7 @@
-@include breakpoint($movil) { //20em
-	
+@include breakpoint($movil) { //20em 320px	
 } //breakpoint($movil)
 
-@include breakpoint($tablet) { //30em
+@include breakpoint($tablet) { //30em 480px
 	/* Site Footer */
 	.site-footer {
 		font-size: 16px;
@@ -10,7 +9,7 @@
 	}
 } //breakpoint($tablet)
 
-@include breakpoint($laptop) { //48em
+@include breakpoint($laptop) { //48em 768px
 	/* Footer */
 	.site-footer {
 		font-size: 14px;
@@ -49,8 +48,7 @@
 	}
 } //breakpoint($laptop)
 
-@include breakpoint($desktop) { //67em
-	
+@include breakpoint($desktop) { //67em	
 } //breakpoint($desktop)
 
 @include breakpoint($largedesk) { //79em

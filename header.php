@@ -1,16 +1,4 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
- */
+<?php /* The header for our theme */
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
@@ -28,12 +16,12 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
+		<?php get_template_part('template-parts/header/header', 'image'); ?>
 
-		<?php if ( has_nav_menu( 'top' ) ) : ?>
+		<?php if (has_nav_menu('top')) : ?>
 			<div class="navigation-top">
 				<div class="wrap">
-					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
+					<?php get_template_part('template-parts/navigation/navigation', 'top'); ?>
 				</div><!-- .wrap -->
 			</div><!-- .navigation-top -->
 		<?php endif; ?>
@@ -42,9 +30,9 @@
 
 	<?php
 	// If a regular post or page, and not the front page, show the featured image.
-	if ( has_post_thumbnail() && ( is_single() || ( is_page() && ! pleiades17_is_frontpage() ) ) ) :
+	if (has_post_thumbnail() && (is_single() || (is_page() && !pleiades17_is_frontpage()))) :
 		echo '<div class="single-featured-image-header">';
-		the_post_thumbnail( 'pleiades17-featured-image' );
+		the_post_thumbnail('pleiades17-featured-image');
 		echo '</div><!-- .single-featured-image-header -->';
 	endif;
 	?>

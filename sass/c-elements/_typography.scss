@@ -4,7 +4,7 @@ input,
 select,
 textarea {
 	color: #333;
-	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+	font-family: "Libre Franklin", "Helvetica Neue", sans-serif;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-weight: 400;
@@ -19,7 +19,7 @@ h5,
 h6 {
 	clear: both;
 	line-height: 1.4;
-	margin: 0 0 0.75em;
+	margin: 0px; // RO fixes weird issue with top/bottom margins -> panels front page
 	padding: 1.5em 0 0;
 }
 
@@ -76,7 +76,7 @@ h6 {
 }
 
 p {
-	margin: 0 0 1.5em;
+	margin: 0px; // RO fixes weird issue with top/bottom margins -> panels front page
 	padding: 0;
 }
 

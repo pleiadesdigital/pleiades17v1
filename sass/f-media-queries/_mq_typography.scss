@@ -1,8 +1,7 @@
-@include breakpoint($movil) { //20em
-	
+@include breakpoint($movil) { //20em 320px
 } //breakpoint($movil)
 
-@include breakpoint($tablet) { //30em
+@include breakpoint($tablet) { //30em 480px
 	/* Typography */
 	body,
 	button,
@@ -44,7 +43,7 @@
 	}
 } //breakpoint($tablet)
 
-@include breakpoint($laptop) { //48em
+@include breakpoint($laptop) { //48em 768px
 	body,
 	button,
 	input,
@@ -61,10 +60,8 @@
 	}
 } //breakpoint($laptop)
 
-@include breakpoint($desktop) { //67em
-	
+@include breakpoint($desktop) { //67em 1072px
 } //breakpoint($desktop)
 
-@include breakpoint($largedesk) { //79em
-	
+@include breakpoint($largedesk) { //79em 1264px
 } //breakpoint($largedesk)

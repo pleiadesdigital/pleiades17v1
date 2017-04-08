@@ -1,31 +1,15 @@
-<?php
-/**
- * Twenty Seventeen: Color Patterns
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- */
+<?php /* Pleiades17: Color Patternsckage WordPress */
 
-/**
- * Generate the CSS for the current custom color scheme.
- */
+// Generate the CSS for the current custom color scheme
 function pleiades17_custom_colors_css() {
-	$hue = absint( get_theme_mod( 'colorscheme_hue', 250 ) );
-
-	/**
-	 * Filter Twenty Seventeen default saturation level.
-	 *
-	 * @since Twenty Seventeen 1.0
-	 *
-	 * @param $saturation integer
-	 */
-	$saturation = absint( apply_filters( 'pleiades17_custom_colors_saturation', 50 ) );
-	$reduced_saturation = ( .8 * $saturation ) . '%';
+	$hue = absint(get_theme_mod('colorscheme_hue', 100));
+	//Filter pleiades17 default saturation level
+	$saturation = absint(apply_filters('pleiades17_custom_colors_saturation', 50));
+	$reduced_saturation = (.8 * $saturation ) . '%';
 	$saturation = $saturation . '%';
 	$css = '
 /**
- * Twenty Seventeen: Color Patterns
+ * Pleiades17: Color Patterns
  *
  * Colors are ordered from dark to light.
  */
@@ -562,9 +546,9 @@ body.colors-custom,
 
 
 	/**
-	 * Filters Twenty Seventeen custom colors CSS.
+	 * Filters Pleiades17 custom colors CSS.
 	 *
-	 * @since Twenty Seventeen 1.0
+	 * @since Pleiades17 1.0
 	 *
 	 * @param $css        string Base theme colors CSS.
 	 * @param $hue        int    The user's selected color hue.

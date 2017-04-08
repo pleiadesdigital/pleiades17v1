@@ -6,9 +6,6 @@
 	background-color: #fafafa !important;
 	position: relative;
 	@include backImage($headerImage);
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
 }
 
 /* Site branding */

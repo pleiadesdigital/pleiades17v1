@@ -1,28 +1,16 @@
-<?php
-/**
- * Template part for displaying posts
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
- */
-
-?>
+<?php /* Most "general" template part for displaying posts */ ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
-		if ( is_sticky() && is_home() ) :
-			echo pleiades17_get_svg( array( 'icon' => 'thumb-tack' ) );
+		if (is_sticky() && is_home()) :
+			echo pleiades17_get_svg(array('icon' => 'thumb-tack'));
 		endif;
 	?>
 	<header class="entry-header">
 		<?php
-			if ( 'post' === get_post_type() ) :
+			if ('post' === get_post_type()) :
 				echo '<div class="entry-meta">';
-					if ( is_single() ) :
+					if (is_single()) :
 						pleiades17_posted_on();
 					else :
 						echo pleiades17_time_link();
@@ -31,10 +19,10 @@
 				echo '</div><!-- .entry-meta -->';
 			endif;
 
-			if ( is_single() ) {
+			if (is_single()) {
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			} else {
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+				the_title('<h2 class="entry-title"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
 			}
 		?>
 	</header><!-- .entry-header -->

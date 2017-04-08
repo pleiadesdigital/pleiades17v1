@@ -1,10 +1,10 @@
-@include breakpoint($movil) { //20em
+@include breakpoint($movil) { //20em 320px
 	body.customize-partial-edit-shortcuts-shown .site-header .site-title {
 		padding-left: 0;
 	}
 } //breakpoint($movil)
 
-@include breakpoint($tablet) { //30em
+@include breakpoint($tablet) { //30em 480px
 	/* Fix image alignment */
 	img.alignleft {
 		float: left;
@@ -32,7 +32,7 @@
 	}
 } //breakpoint($tablet)
 
-@include breakpoint($laptop) { //48em
+@include breakpoint($laptop) { //48em 768px
 	/* Widgets */
 	h2.widget-title {
 		font-size: 11px;
@@ -57,11 +57,10 @@
 	}
 } //breakpoint($laptop)
 
-@include breakpoint($desktop) { //67em
-	
+@include breakpoint($desktop) { //67em 1072px
 } //breakpoint($desktop)
 
-@include breakpoint($largedesk) { //79em
+@include breakpoint($largedesk) { //79em 1264px
 	.has-sidebar .entry-content blockquote.alignleft {
 		margin-left: -20%;
 	}
